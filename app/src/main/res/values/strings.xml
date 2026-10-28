@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ТВ Дом</string>
+    <string name="row_favorites">Избранное</string>
+    <string name="row_apps">Все приложения</string>
+    <string name="row_system">Система</string>
+    <string name="menu_add_fav">Добавить в избранное</string>
+    <string name="menu_remove_fav">Убрать из избранного</string>
+    <string name="menu_move_left">Сдвинуть влево</string>
+    <string name="menu_move_right">Сдвинуть вправо</string>
+    <string name="menu_info">О приложении</string>
+    <string name="menu_uninstall">Удалить</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_network">Сеть</string>
+    <string name="tile_settings">Настройки</string>
+    <string name="tile_network">Wi‑Fi и сеть</string>
+    <string name="tile_display">Экран и звук</string>
+    <string name="tile_storage">Память</string>
+    <string name="hint_app">ОК — открыть · удерживайте ОК — меню</string>
+    <string name="hint_system">ОК — открыть</string>
+    <string name="greet_morning">Доброе утро</string>
+    <string name="greet_day">Добрый день</string>
+    <string name="greet_evening">Добрый вечер</string>
+    <string name="greet_night">Доброй ночи</string>
+    <string name="open_failed">Не удалось открыть</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tile_w">208dp</dimen>
+    <dimen name="tile_h">117dp</dimen>
+    <dimen name="tile_gap">18dp</dimen>
+</resources>
