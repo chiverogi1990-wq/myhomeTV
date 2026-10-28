@@ -1,0 +1,38 @@
+name: Собрать APK
+
+on:
+  push:
+  workflow_dispatch:   # кнопка «Run workflow» во вкладке Actions
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Скачать проект
+        uses: actions/checkout@v4
+
+      - name: Установить Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Подготовить Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Установить Gradle
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.11.1'
+
+      - name: Собрать APK
+        run: gradle assembleRelease --no-daemon --stacktrace
+
+      - name: Переименовать файл
+        run: cp app/build/outputs/apk/release/app-release.apk TvHome.apk
+
+      - name: Выложить APK для скачивания
+        uses: actions/upload-artifact@v4
+        with:
+          name: TvHome-apk
+          path: TvHome.apk
